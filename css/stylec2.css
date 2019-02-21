@@ -1,0 +1,114 @@
+body {
+  height: 100%;
+  min-width: 100%;
+  font-family:  "Roboto Condensed", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: #5e7270;
+  text-decoration: none;
+}
+
+li {
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+header {
+  height: 7em;
+  background: #fcf7e7;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.33);
+}
+
+.header-logo {
+  padding-left: 30px;
+  height: auto;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #068500;
+  color: #068500;
+} 
+
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 19px;
+  text-align: center;
+  font-size: 16px;
+  background: #818f89;
+}
+
+.rounded-circle {
+  padding-right: 10px;
+}
+
+main {
+  height: 600px;
+  background: black;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.33);
+}
+
+footer {
+  background: #cccccc;
+  height: 40%;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.33);
+  padding: 60px 15px;
+}
+
+/* заголовок типо "об учереждении" */
+footer .row nav .title a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+footer .row nav .title a:hover {
+  border-bottom: 3px solid #068500;
+  color: #068500;
+}
+/********************************/
+
+/* блок списка ul */
+footer .row ul {
+  padding-left: 5px;
+}
+/********************************/
+
+/* блок списка ul каждая строчка */
+footer .row ul li a {
+  font-family: Roboto Condensed, sans-serif;
+  color: #242424;
+  text-decoration: none;
+}
+
+footer .row ul li a:hover {
+  color: #5e7270;
+}
+
+footer .row nav ul li {
+  margin: 20px 0 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+/********************************/
+
+footer i {
+  margin-right: 15px;
+}
+
+.footer-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: 700;
+  margin: 0 0 35px;
+}
