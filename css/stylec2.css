@@ -47,10 +47,25 @@ header {
 }
 
 main {
-  height: 600px;
-  background: black;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.33);
 }
+
+.container {
+  margin-top: 25px; 
+}
+
+.box {
+  -border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+main i {
+  margin-right: 10px;
+}
+
+.card-header {
+  margin-bottom: 20px;
+ } 
 
 footer {
   background: #cccccc;
