@@ -28,8 +28,8 @@ header {
   height: auto;
 }
 
-.nav-link:hover {
-  border-bottom: 3px solid #068500;
+header .nav-link:hover {
+  border-bottom: 2px solid transparent #068500;
   color: #068500;
 } 
 
@@ -66,10 +66,55 @@ main h5 {
   text-decoration: none;
 }
 
+.shadow-sm {
+  box-shadow: 0 0.0rem .1rem 0.1em!important;
+}
+
+.fa-file-word:hover {
+  color:blue;
+}
+
+.fa-file-excel:hover {
+  color:green;
+}
+
+.fa-file-pdf:hover {
+  color:red;
+}
+
+.modal-footer > .btn {
+  margin-top: 85px;
+}
+
+/*Модальное окно*/
+.modal-body p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.modal-body .row > div {
+  border: none;
+  box-shadow: none;
+}
+
+.modal-body .row div:last-child {
+  margin-top: 30px;
+}
+
+.modal-body .row span {
+  color: green;
+}
+
+.modal-content .input-group {
+  width: 50%;
+}
+/****************/
+
 /* Лупа */
 main i {
   margin-right: 10px;
-  font-size: 22px;
+  font-size: 25px;
 }
 /********************************/
 
