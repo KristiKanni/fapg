@@ -50,9 +50,9 @@
 	</header>
 
 	<main>
-		<div class="container p-4 mb-4 bg-white rounded">
+		<div class="container p-4 mb-4 bg-white">
 			<div class="row mb-3">
-				<div class="shadow-sm container col-md-7 pr-0 pl-0 p-4 mb-4 bg-white rounded">
+				<div class="shadow-sm container col-md-7 pr-0 pl-0 p-4 mb-4 bg-white">
 					<table class="table layout">
 						<tr>
 							<th>Услуга</th>
@@ -87,20 +87,23 @@
 							<td></td>
 						</tr>
 					</table>
-					<div>
-						<p>Просмотр файлов по заявке</p> 
-						<i class="far fa-file-word"></i> 
-						<i class="far fa-file-excel"></i> 
-						<i class="far fa-file-pdf"></i>
+					<div class="files">
+						<p>Просмотр файлов по заявке:</p> 
+							<i class="far fa-file-word"></i> 
+							<i class="far fa-file-excel"></i> 
+							<i class="far fa-file-pdf"></i>
 					</div>
 				</div>
-				<div class="shadow-sm container col-md-4 p-4 mb-4 bg-white rounded">
-					<h2>Статус: активен</h2><br><br>
-					<p>Принят: 21 числа</p>
-					<p>В обработке: с 12 апреля</p>
-					<p>Завершен: не завершен</p>
-					<p>Отклонен: не отклонен</p>
-					<div class="modal-footer ">
+				<div class="shadow-sm container col-md-4 p-4 mb-4 bg-white">
+					<div class="modal-top">
+						<h2>Статус: активен</h2><br><br>
+						<p>Принят: 21 числа</p>
+						<p>В обработке: с 12 апреля</p>
+						<p>Завершен: не завершен</p>
+						<p>Отклонен: не отклонен</p>
+					</div>
+
+					<div class="modal-footer">
 						<button type="button" class="btn btn-success" data-dismiss="modal">Отменить заявку</button>
 					</div>
 				</div>
