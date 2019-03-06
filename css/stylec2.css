@@ -126,6 +126,10 @@ main h5 {
   color: black;
 }
 
+.modal-footer {
+  padding: 2.3rem;
+}
+
 .modal-footer .btn {
   background: #fcf7e7;
   border-color: #f5edd4;
