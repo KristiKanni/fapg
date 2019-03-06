@@ -82,6 +82,10 @@ main h5 {
   color:red;
 }
 
+.form-control, .modal-window, .search {
+  display: inline-block;
+}
+
 /*Модальное окно*/
 .modal-body p {
   font-size: 16px;
@@ -105,15 +109,40 @@ main h5 {
 .modal-content .input-group {
   width: 50%;
 }
-/****************/
 
+/****************/
+/* ========== Коллапс========= */
+
+header .navbar-collapse {
+  justify-content: center;
+}
+
+/* ========================== */
+
+/* =========ЛОГО АДАПТИВ====== */ 
+.header-logo2 {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  .header-logo {
+    display: none;
+  }
+  .header-logo2 {
+    display: inline;
+  }
+}
+
+
+
+/*========================*/
 /* Лупа */
 main .search i {
-  margin: 3px 10px 0px 0px;
+  padding: 5px 0 0 0;
   font-size: 27px;
 }
 
 main .search input {
+  min-width: 30px;
   height: 35px;
   font-size: 20px;
 }
@@ -224,3 +253,88 @@ footer i {
   font-weight: 700;
   margin: 0 0 35px;
 }
+
+/* Гамбургер */
+
+.nav-link {
+  display: inline-block;
+}
+
+.icon {
+  display: none;
+  width: 45px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.icon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #000;
+  border-radius: 9px;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.icon span:nth-child(1) {
+  top: 0px;
+}
+
+.icon span:nth-child(2), .icon span:nth-child(3) {
+  top: 13px;
+}
+
+.icon span:nth-child(4) {
+  top: 26px;
+}
+
+@media screen and (max-width: 1300px) {
+  .icon {
+    display: inline-block;
+  }
+  .links {
+    position: fixed;
+    display: block;
+    top: 45px;
+    right: 0;
+    left: 0;
+    margin-top: 52px;
+    background: #fcf7e7;
+    z-index: 1000;
+    overflow: auto;
+    opacity: 0;
+  }
+  .menu-item {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+.icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.links {
+  opacity: 1;
+}
+/* ========= */
