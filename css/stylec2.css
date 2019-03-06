@@ -33,8 +33,12 @@ header .nav-link:hover {
   color: #068500;
 } 
 
+header i {
+  font-size: 26px;
+}
+
 .btn-circle {
-  width: 40px;
+  width: 70px;
   height: 40px;
   border-radius: 19px;
   text-align: center;
