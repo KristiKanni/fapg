@@ -50,11 +50,11 @@ header i {
   padding-right: 10px;
 }
 
-.card div>a{
+.card div > a{
   text-decoration: none;
 }
 
-.card div>a:hover{
+.card div > a:hover{
   color: #5e7270;
 }
 
@@ -127,7 +127,7 @@ header .navbar-collapse {
 .header-logo2 {
   display: none;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1354px) {
   .header-logo {
     display: none;
   }

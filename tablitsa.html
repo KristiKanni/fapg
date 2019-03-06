@@ -38,110 +38,112 @@
 						<a href="#" class="nav-link">Контакты</a>
 					</li>
 				</ul>
+			</div>
+			<div class="d-inline-block">
 				<img src="img/foto.jpg" class="rounded-circle" width="80" height="70">
-				<i class="fas fa-sign-out-alt"></i><button class="btn-circle btn-outline">Выход</button>
+				<button class="btn"><i class="fas fa-sign-out-alt fa-2x"></i></button>
 			</div>
 		</nav>
 	</header>
 
 	<main>
-		<div class="row m-0">
-			<div class="container box sort col-sm-8 p-4 bg-white">
-				<div class="search float-right">
-					<i class="fas fa-search"></i>
-					<input type="text"> 
-				</div>
-
-				<div id="toolbar">
-					<div class="form-inline float-left">
-						<label>Сортировать по:</label>
-						<select class="form-control">
-							<option value="all">дате</option>
-							<option value="selected">статусу</option>
-						</select>
-					</div>
-					<div class="modal-window">
-						<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Модальное окно</button>
-						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg" role="document">
-								<div class="modal-content">
-
-									<div class="modal-header">
-								        <h4 class="modal-title">Мои обращения</h4>
-								        <button type="button" class="close" data-dismiss="modal">&times;</button>
-							    	</div>
-
-								    <div class="modal-body">
-								    	<div class="form-group">
-									    	<label>Куда</label>
-									    	<select name="choose" class="form-control">
-									    		<option>Чето</option>
-									    		<option>не чето</option>
-									    	</select>
-										</div>
-
-										<div class="form-group">
-										    <label>Тип обращения</label>
-										    <select name="choose" class="form-control">
-									    		<option>Чето</option>
-									    		<option>не чето</option>
-									    	</select>
-									    </div>
-
-								    	<div class="form-group">
-								    		<label>Суть обращения</label>
-								    		<input type="text" class="form-control" id="Info" placeholder="Вкратце">
-								    	</div>
-										
-										<div class="row">
-									    	<div class="form-group col-6">
-									    		<label>Текст обращения</label>
-									    		<textarea class="form-control" cols="30" rows="10"></textarea>
-									    	</div>
-
-									    	<div class="col-6">
-									    		<p>В соответсвии с <span>частью 1 статьи 7 Федерального закона от 2 мая 2006 года №59-ФЗ "О порядке рассмотрения обращений граждан Российской Федерации"</span> изложите суть предложения, заявления, вопроса или жалобы.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatibus explicabo repudiandae dicta sint error, distinctio nobis provident ex voluptate.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptatem architecto quos libero quidem possimus, mollitia atque praesentium aliquam fugit? Alias laboriosam, repellendus esse deserunt amet fugiat molestiae assumenda ipsam accusantium.</p>
-									    	</div>
-										</div>
-
-										<table>
-											<tr>
-												<th>Файл</th>
-												<th>Имя</th>
-												<th>Удалить</th>
-											</tr>
-											<tbody>
-												<tr>
-													<td>Загрузить файл </td>
-													<td>
-														<div class="custom-file">
-															<input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-															<label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
-														</div>
-													</td>
-													<td>
-														<button class="input-group-text" onclick='rm()'>
-														Удалить
-														</button>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-
-										<button type="button" class="btn btn-success mt-2" onclick='add()'>Загрузить еще</button>
-									</div>
-
-									<div class="modal-footer">
-										<button type="button" class="btn btn-success" data-dismiss="modal">Создать</button>
-									</div>
-								</div>
-					    	</div>
-						</div>
-					</div>
-				</div>
-
+		
+		<div class="container box sort col-sm-8 p-4 bg-white">
+			<div class="search float-right">
+				<i class="fas fa-search"></i>
+				<input type="text"> 
 			</div>
+
+			<div id="toolbar">
+				<div class="form-inline float-left">
+					<label>Сортировать по:</label>
+					<select class="form-control">
+						<option value="all">дате</option>
+						<option value="selected">статусу</option>
+					</select>
+				</div>
+				<div class="modal-window">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Модальное окно</button>
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+
+								<div class="modal-header">
+							        <h4 class="modal-title">Мои обращения</h4>
+							        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						    	</div>
+
+							    <div class="modal-body">
+							    	<div class="form-group">
+								    	<label>Куда</label>
+								    	<select name="choose" class="form-control">
+								    		<option>Чето</option>
+								    		<option>не чето</option>
+								    	</select>
+									</div>
+
+									<div class="form-group">
+									    <label>Тип обращения</label>
+									    <select name="choose" class="form-control">
+								    		<option>Чето</option>
+								    		<option>не чето</option>
+								    	</select>
+								    </div>
+
+							    	<div class="form-group">
+							    		<label>Суть обращения</label>
+							    		<input type="text" class="form-control" id="Info" placeholder="Вкратце">
+							    	</div>
+									
+									<div class="row">
+								    	<div class="form-group col-6">
+								    		<label>Текст обращения</label>
+								    		<textarea class="form-control" cols="30" rows="10"></textarea>
+								    	</div>
+
+								    	<div class="col-6">
+								    		<p>В соответсвии с <span>частью 1 статьи 7 Федерального закона от 2 мая 2006 года №59-ФЗ "О порядке рассмотрения обращений граждан Российской Федерации"</span> изложите суть предложения, заявления, вопроса или жалобы.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatibus explicabo repudiandae dicta sint error, distinctio nobis provident ex voluptate.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptatem architecto quos libero quidem possimus, mollitia atque praesentium aliquam fugit? Alias laboriosam, repellendus esse deserunt amet fugiat molestiae assumenda ipsam accusantium.</p>
+								    	</div>
+									</div>
+
+									<table>
+										<tr>
+											<th>Файл</th>
+											<th>Имя</th>
+											<th>Удалить</th>
+										</tr>
+										<tbody>
+											<tr>
+												<td>Загрузить файл </td>
+												<td>
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+														<label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
+													</div>
+												</td>
+												<td>
+													<button class="input-group-text" onclick='rm()'>
+													Удалить
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<button type="button" class="btn btn-success mt-2" onclick='add()'>Загрузить еще</button>
+								</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success" data-dismiss="modal">Создать</button>
+								</div>
+							</div>
+				    	</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
+		
 
 		<div class="container box col-sm-8 p-4 mb-5 bg-white">
 				
@@ -203,7 +205,6 @@
 				</table>
 			</div>
 		</div>
-		</div>
 	</main>
 
 	<footer>
@@ -254,13 +255,13 @@
 	<div class="footer-text">
 		<p>COPYRIGHT © 2014—2019. ФГБУ ФЕДЕРАЛЬНОЕ АГЕНТСТВО ГОСПОДДЕРЖКИ АПК</p>
 	</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/script.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ 	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
