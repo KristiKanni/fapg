@@ -18,7 +18,6 @@ li {
 }
 
 header {
-  height: 7em;
   background: #fcf7e7;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.33);
 }
@@ -63,7 +62,14 @@ header i {
 }
 
 .box {
+  display: flex;
+  justify-content: space-between;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.box .btn-outline-secondary:hover {
+  color: #6c757d;
+  background: #fcf7e7;
 }
 
 main h5 {
@@ -114,6 +120,15 @@ main h5 {
   width: 50%;
 }
 
+.modal-window .btn {
+  background: #fcf7e7;
+  border-color: #f5edd4
+}
+
+.modal-window .btn:hover {
+  background: #f5edd4;
+}
+
 /****************/
 /* ========== Коллапс========= */
 
@@ -150,17 +165,11 @@ main .search input {
   height: 35px;
   font-size: 20px;
 }
+
+
 /********************************/
 
 /* Фильтрация по:; */
-.form-inline {
-  width: 280px; 
-}
-
-#toolbar {
-  -width: 200px;
-}
-
 label {
   padding-right: 15px;
 }
