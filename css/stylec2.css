@@ -122,7 +122,14 @@ main h5 {
 
 .modal-window .btn {
   background: #fcf7e7;
-  border-color: #f5edd4
+  border-color: #f5edd4;
+  color: black;
+}
+
+.modal-footer .btn {
+  background: #fcf7e7;
+  border-color: #f5edd4;
+  color: black;
 }
 
 .modal-window .btn:hover {
