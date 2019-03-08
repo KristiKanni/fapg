@@ -116,13 +116,9 @@ main h5 {
   color: green;
 }
 
-.modal-content .input-group {
-  width: 50%;
-}
+
 
 .modal-window .btn {
-  background: #fcf7e7;
-  border-color: #f5edd4;
   color: black;
 }
 
@@ -131,13 +127,11 @@ main h5 {
 }
 
 .modal-footer .btn {
-  background: #fcf7e7;
-  border-color: #f5edd4;
   color: black;
 }
 
-.modal-window .btn:hover {
-  background: #f5edd4;
+.form-control {
+  margin-top: 10px;
 }
 
 /****************/
@@ -175,6 +169,7 @@ main .search input {
   min-width: 30px;
   height: 35px;
   font-size: 20px;
+
 }
 
 
@@ -182,7 +177,8 @@ main .search input {
 
 /* Фильтрация по:; */
 label {
-  padding-right: 15px;
+  padding: 10px;
+
 }
 /********************************/
 /* Application Файлы */
@@ -202,12 +198,6 @@ main .files i:hover {
   right: 20px;
 }
 /* ************************ */
-
-/* Таблица */
-tr {
-  cursor: pointer;
-}
-/********************************/
 
 /* Аккардеон */
 .card-header {
