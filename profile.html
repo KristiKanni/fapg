@@ -10,8 +10,8 @@
 </head>
 
 <body>
-<header>
-		<nav class="navbar navbar-expand-md navbar-toggleable">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-toggleable">
 			<a href="#"><img class="header-logo img-fluid" src="img/logo.png" alt="fapg_logo">
 				<img class="header-logo2" src="img/logo-s.png" alt="fapg_logo"></a>
 
@@ -21,7 +21,7 @@
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav text-right">
 					<li class="navbar-item">
 						<a href="#" class="nav-link">Главная</a>
 					</li>
@@ -37,79 +37,53 @@
 					<li class="navbar-item">
 						<a href="#" class="nav-link">Контакты</a>
 					</li>
+					<div class="d-inline-block">
+						<img src="img/foto.jpg" class="rounded-circle" width="80" height="70">
+						<button class="btn"><i class="fas fa-sign-out-alt fa-2x"></i></button>
+					</div>
 				</ul>
 			</div>
-			<div class="d-inline-block">
-				<img src="img/foto.jpg" class="rounded-circle" width="80" height="70">
-				<button class="btn"><i class="fas fa-sign-out-alt fa-2x"></i></button>
-			</div>
+			
 		</nav>
 	</header>
 
 	<main>
 		<div class="box container p-4 mb-4 bg-white rounded">
 			<div class="container mb-5">
-				<div class="pl-3">
-					<h3>Обо мне</h3>
-				</div>
+				<div class="pl-3"> <h3>Обо мне</h3> </div>
 
 				<hr align="center">
 
 				<div class="form-group row">
-					<div class="col-sm-4">
-				  		<input type="text" class="form-control" id="usr" placeholder="Фамилия">
-				  	</div>
-				  	<div class="col-sm-4">
-				  		<input type="text" class="form-control" id="usr" placeholder="Имя">
-				  	</div>
-				  	<div class="col-sm-4">
-				  		<input type="text" class="form-control" id="usr" placeholder="Отчество">
-				  	</div>
+			  		<input type="text" class="form-control col-md-4" id="usr" placeholder="Фамилия">
+			  		<input type="text" class="form-control col-md-4" id="usr" placeholder="Имя">
+			  		<input type="text" class="form-control col-md-4" id="usr" placeholder="Отчество">
 				</div>
 
 				<div class="form-group row">
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="usr" placeholder="Контактный телефон">
-					</div>
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="usr" placeholder="Доп. телефон">
-					</div>
+					<input type="text" class="form-control col-md-4" id="usr" placeholder="Контактный телефон">
+					<input type="text" class="form-control col-md-4" id="usr" placeholder="Доп. телефон">
 				</div>
 
 				<div class="form-group row">
-					<div class="col-sm-4">
-						<input type="email" class="form-control" id="usr" placeholder="Почта">
-					</div>
+					<input type="email" class="form-control col-md-4" id="usr" placeholder="Почта">
 				</div>
 
-				<div class="pl-3">
-					<h3>Юр. лицо</h3>
-				</div>
+				<div class="pl-3"> <h3>Юр. лицо</h3> </div>
 
 				<hr align="center">
 
 				<div class="form-group row">
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="usr" placeholder="Наименование Юр. лица">
-					</div>
+					<input type="text" class="form-control col-md-4" id="usr" placeholder="Наименование Юр. лица">
+				</div>
+				<div class="form-group row">
+					<input type="text" class="form-control col-md-4" id="usr" placeholder="Кем зарегистрирован">
+					<input type="date" class="form-control col-md-4" id="usr" placeholder="Дата регистрации">
 				</div>
 
 				<div class="form-group row">
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="usr" placeholder="Кем зарегистрирован">
-					</div>
-					<div class="col-sm-4">
-						<input type="date" class="form-control" id="usr" placeholder="Дата регистрации">
-					</div>
-				</div>
-
-				<div class="form-group row">
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="usr" placeholder="ОГРН">
-					</div>
-					<div class="col-sm-4">
-						<input type="number" class="form-control" id="usr" placeholder="ИНН">
-					</div>
+					<input type="text" class="form-control col-md-4" id="usr" placeholder="ОГРН">
+					<input type="number" class="form-control col-md-4" id="usr" placeholder="ИНН">
 				</div>
 			</div>
 		</div>

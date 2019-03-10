@@ -36,6 +36,10 @@ header i {
   font-size: 26px;
 }
 
+/* АДАПТИВ================= */
+
+/* ======================= */
+
 .btn-circle {
   width: 70px;
   height: 40px;
@@ -62,14 +66,24 @@ header i {
 }
 
 .box {
-  display: flex;
-  justify-content: space-between;
+
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .box .btn-outline-secondary:hover {
   color: #6c757d;
   background: #fcf7e7;
+}
+
+
+.box .form-group input {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .box .form-group input:not(last-child) {
+    margin-right: 10px;
+  }
 }
 
 main h5 {
@@ -116,22 +130,28 @@ main h5 {
   color: green;
 }
 
-
+.modal-content .input-group {
+  width: 50%;
+}
 
 .modal-window .btn {
+  background: #e8ddb8;
+  border-color: #907f4b;
   color: black;
 }
 
 .modal-footer {
-  padding: 2.3rem;
+  padding: 2.2rem;
 }
 
 .modal-footer .btn {
+  background: #e8ddb8;
+  border-color: #907f4b;
   color: black;
 }
 
-.form-control {
-  margin-top: 10px;
+.modal-window .btn:hover {
+  background: #e0d5af;
 }
 
 /****************/
@@ -156,8 +176,6 @@ header .navbar-collapse {
   }
 }
 
-
-
 /*========================*/
 /* Лупа */
 main .search i {
@@ -169,7 +187,6 @@ main .search input {
   min-width: 30px;
   height: 35px;
   font-size: 20px;
-
 }
 
 
@@ -177,8 +194,7 @@ main .search input {
 
 /* Фильтрация по:; */
 label {
-  padding: 10px;
-
+  padding-right: 15px;
 }
 /********************************/
 /* Application Файлы */
@@ -198,6 +214,10 @@ main .files i:hover {
   right: 20px;
 }
 /* ************************ */
+
+/* Таблица */
+
+/********************************/
 
 /* Аккардеон */
 .card-header {
