@@ -36,6 +36,10 @@ header i {
   font-size: 26px;
 }
 
+/* АДАПТИВ================= */
+
+/* ======================= */
+
 .btn-circle {
   width: 70px;
   height: 40px;
@@ -62,14 +66,24 @@ header i {
 }
 
 .box {
-  display: flex;
-  justify-content: space-between;
+
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .box .btn-outline-secondary:hover {
   color: #6c757d;
   background: #fcf7e7;
+}
+
+
+.box .form-group input {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .box .form-group input:not(last-child) {
+    margin-right: 10px;
+  }
 }
 
 main h5 {
@@ -121,19 +135,23 @@ main h5 {
 }
 
 .modal-window .btn {
-  background: #fcf7e7;
-  border-color: #f5edd4;
+  background: #e8ddb8;
+  border-color: #907f4b;
   color: black;
 }
 
+.modal-footer {
+  padding: 2.2rem;
+}
+
 .modal-footer .btn {
-  background: #fcf7e7;
-  border-color: #f5edd4;
+  background: #e8ddb8;
+  border-color: #907f4b;
   color: black;
 }
 
 .modal-window .btn:hover {
-  background: #f5edd4;
+  background: #e0d5af;
 }
 
 /****************/
@@ -157,8 +175,6 @@ header .navbar-collapse {
     display: inline;
   }
 }
-
-
 
 /*========================*/
 /* Лупа */
@@ -200,9 +216,7 @@ main .files i:hover {
 /* ************************ */
 
 /* Таблица */
-tr {
-  cursor: pointer;
-}
+
 /********************************/
 
 /* Аккардеон */
